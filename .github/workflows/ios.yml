@@ -1,0 +1,20 @@
+# name: build iOS
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# env:
+#   TZ: Asia/Shanghai
+
+# jobs:
+#   build:
+#     runs-on: macos-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: subosito/flutter-action@v1
+#         with:
+#           channel: 'stable'
+#       - run: flutter pub get
+#       - run: flutter build ios --no-codesign -v
